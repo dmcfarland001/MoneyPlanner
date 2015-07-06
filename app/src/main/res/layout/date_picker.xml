@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp"
+    android:background="@drawable/listbg0">
+
+    <LinearLayout
+        android:id="@+id/pop_lin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:orientation="horizontal">
+
+
+            <!--    android:layout_gravity="center_horizontal"  -->
+            <Button
+                android:id="@+id/set_date_btn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="showDatePickerDialog"
+                android:text="@string/set_date" />
+
+            <Button
+                android:id="@+id/plus_set_date"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:onClick="OnClick"
+                android:text="   +   " />
+
+            <Button
+                android:id="@+id/minus_set_date"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:onClick="OnClick"
+                android:text="   -   " />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/d_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/date_tv"
+            android:textColor="#000000"
+            android:visibility="invisible" />
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete_edit_note_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/note"
+            android:inputType="text"
+            android:maxLength="15"
+            android:textColor="#000000">
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <EditText
+            android:id="@+id/d_edit_value"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:hint="@string/value"
+            android:inputType="numberDecimal"
+            android:maxLength="15"
+            android:textColor="#000000" />
+
+        <!--  Put a layout around here then weight the two buttons Delete-->
+        <Button
+            android:id="@+id/edit_row_date"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:ems="10"
+            android:onClick="showDatePickerDialog"
+            android:textColor="#ff000000"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/edit_row_id"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/row_id"
+            android:inputType="number"
+            android:textColor="#ff000000"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pop_lin_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/in_top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/d_in_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnClick"
+                        android:text="@string/in" />
+
+                    <Button
+                        android:id="@+id/to_in_table"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnClick"
+                        android:text="@string/in_table" />
+
+                    <Button
+                        android:id="@+id/get_info_in"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:onClick="OnClick"
+                        android:text="@string/get_info" />
+
+                    <Button
+                        android:id="@+id/edit_entry_in"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:onClick="OnClick"
+                        android:text="@string/edit"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/d_out_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnClick"
+                        android:text="@string/out" />
+
+                    <Button
+                        android:id="@+id/to_out_table"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="OnClick"
+                        android:text="@string/out_table" />
+
+                    <Button
+                        android:id="@+id/get_info_out"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:onClick="OnClick"
+                        android:text="@string/get_info" />
+
+                    <Button
+                        android:id="@+id/edit_entry_out"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:onClick="OnClick"
+                        android:text="@string/edit"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/clear_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="OnClick"
+                    android:text="@string/clear" />
+
+                <Button
+                    android:id="@+id/view_graph_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="OnClick"
+                    android:text="@string/graph" />
+
+                <Button
+                    android:id="@+id/main_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="OnClick"
+                    android:text="@string/main" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Money, Bills and Dates</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="in">In</string>
+    <string name="about">About</string>
+    <string name="set_date">Set Date</string>
+    <string name="main">Main</string>
+    <string name="delete_last_thirtt">Delete last stored month values</string>
+    <string name="delete_thirty">Delete</string>
+    <string name="load">Loading...</string>
+    <string name="date_tv">MM-DD-YYYY</string>
+    <string name="out">Out</string>
+    <string name="note">Note</string>
+    <string name="in_table">In Table</string>
+    <string name="out_table">Out Table</string>
+    <string name="value">Value</string>
+    <string name="ave_value">Ave Value</string>
+    <string name="clear">Clear</string>
+    <string name="hourglass">Hour Glass</string>
+    <string name="ask_delete">To delete the database please erase settings in Application Manager.</string>
+    <string name="row_id">Look Up Id</string>
+    <string name="date">Saved Date</string>
+    <string name="date_l">Date</string>
+    <string name="f_date">Future Date</string>
+    <string name="enter_vals">Enter Values</string>
+    <string name="graph">View Graph</string>
+    <string name="view">View Table</string>
+    <string name="get_info">Get Id Info</string>
+    <string name="edit">Edit Value</string>
+    <string name="get_info_databse">Get database</string>
+    <string name="minus">++</string>
+    <string name="del">Delete</string>
+    <string name="delete_in">Delete In</string>
+    <string name="delete_out">Delete Out</string>
+    <string name="plus">+</string>
+    <string name="num">#</string>
+    <string name="averages">Av</string>
+    <string name="in_tabl">In</string>
+    <string name="out_tabl">Out</string>
+    <string name="add">Add</string>
+    <string name="gr">Gr</string>
+    <string name="mvalue">Ave Values</string>
+    <string name="mdate">Ave Days</string>
+    <string name="linear_table">Linear Table</string>
+    <string name="list">List</string>
+
+
+    <string name="tv_2">\tThis app was made to track bills and give predictions on how much the next will be. Please have at least three of the same bill values. Use general labels for the notes. Instead of
+    naming a gas station "24 hr Gasoline" use "Gas".</string>
+
+    <string name="tv_3">\tThe information presented shows averages, future dates, future values, and a list of sums that goes through each month.</string>
+
+    <string name="tv_4">\tThe two buttons bellow show a raw in out table.</string>
+
+    <string name="tv_5">\tTo delete the databases go to settings->Application Manager->Money, Bills and Dates->Clear Data/ Clear cache</string>
+
+    <string name="tv_6">\tThe idea of the app is not to align with your bank account but to give an allotted amount of money for bills then predicting how balance the costs.</string>
+
+
+    <string name="in_table_m">In Values</string>
+    <string name="out_table_m">All Out Values</string>
+    <string name="add_values">Add To Tables</string>
+    <string name="graph_m">Graph</string>
+    <string name="manage">Manage</string>
+    <string name="export">Export</string>
+    <string name="all_in">All In Values</string>
+    <string name="all_out">All Out Values</string>
+    <string name="min_view_in">Predicted Values In</string>
+    <string name="min_view_out">Predicted Values Out</string>
+    <string name="in_ave">In Average Values</string>
+    <string name="out_ave">Out Average Values</string>
+    <string name="lin_list">Linear View</string>
+    <string name="about_app">About App</string>
+    <string name="edit_view_in">Edit View In</string>
+    <string name="edit_view_out">Edit View Out</string>
+    <string name="delete_db">Delete Database</string>
+    <string name="delete_30">Delete Last Month.</string>
+    <string name="minus_true">    -    </string>
+    <string name="delete_entry">Delete old values.</string>
+
+    <string name="delete_ins">Click to delete the last stored value. Redirects to main to prevent double clicking.</string>
+
+
+</resources>

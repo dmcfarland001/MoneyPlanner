@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dmcfarland001.glucose.greenglucose.moneyplanner"
+	android:versionCode="5"
+    android:versionName="3.1416"	>
+	
+	
+	
+    <!--
+        /**
+        *
+        * @author
+        * @copyright       dmcfarland001.glucose.greenglucose.moneyplanner
+
+        * 			Daniel McFarland DMcFarland001@gmail.com "Green Glucose Inc."
+        *         "Green Glucose" This is an Android application that uses statistics
+        *         to map out a future bank account. This information is meant only for
+        *         informational purposes and no responsibility's are on me the author
+        *         of this application. I take no responsibility and have no liability
+        *         for any information displayed on or in this application. Only
+        *         intention for this application is to guess information.
+
+                   android:theme="@android:style/Theme.DeviceDefault"
+
+                   android.permission.INTERACT_ACROSS_USERS_FULL
+        *
+        */
+  -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity
+            android:name="dmcfarland001.glucose.greenglucose.moneyplanner.SQLSetTableViewIn"
+            android:label="@string/in_table_m">
+            <intent-filter>
+                <action android:name="android.intent.action.SQLSETTABLEVIEWIN" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dmcfarland001.glucose.greenglucose.moneyplanner.SQLSetTableViewOut"
+            android:label="@string/out_table_m">
+            <intent-filter>
+                <action android:name="android.intent.action.SQLSETTABLEVIEWOUT" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dmcfarland001.glucose.greenglucose.moneyplanner.DatePicker"
+            android:label="@string/add_values">
+            <intent-filter>
+                <action android:name="android.intent.action.DATEPICKER" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dmcfarland001.glucose.greenglucose.moneyplanner.Graph_One"
+            android:label="@string/graph_m">
+            <intent-filter>
+                <action android:name="android.intent.action.GRAPH_ONE" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dmcfarland001.glucose.greenglucose.moneyplanner.SQLTableInAll"
+            android:label="@string/all_in">
+            <intent-filter>
+                <action android:name="android.intent.action.SQLTABLEINALL" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dmcfarland001.glucose.greenglucose.moneyplanner.SQLTableOutAll"
+            android:label="@string/all_out">
+            <intent-filter>
+                <action android:name="android.intent.action.SQLTABLEOUTALL" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dmcfarland001.glucose.greenglucose.moneyplanner.SQLMinViewIn"
+            android:label="@string/min_view_in">
+            <intent-filter>
+                <action android:name="android.intent.action.SQLMINVIEWIN" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dmcfarland001.glucose.greenglucose.moneyplanner.SQLMinViewOut"
+            android:label="@string/min_view_out">
+            <intent-filter>
+                <action android:name="android.intent.action.SQLMINVIEWOUT" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dmcfarland001.glucose.greenglucose.moneyplanner.SQLAveIn"
+            android:label="@string/in_ave">
+            <intent-filter>
+                <action android:name="android.intent.action.SQLAVEIN" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dmcfarland001.glucose.greenglucose.moneyplanner.SQLAveOut"
+            android:label="@string/out_ave">
+            <intent-filter>
+                <action android:name="android.intent.action.SQLAVEOUT" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dmcfarland001.glucose.greenglucose.moneyplanner.LinearList"
+            android:label="@string/lin_list">
+            <intent-filter>
+                <action android:name="android.intent.action.LINEARLIST" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dmcfarland001.glucose.greenglucose.moneyplanner.AboutPage"
+            android:label="@string/about_app">
+            <intent-filter>
+                <action android:name="android.intent.action.ABOUTPAGE" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dmcfarland001.glucose.greenglucose.moneyplanner.SQLNumbersViewIn"
+            android:label="@string/edit_view_in">
+            <intent-filter>
+                <action android:name="android.intent.action.SQLNUMBERSVIEWIN" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dmcfarland001.glucose.greenglucose.moneyplanner.SQLNumbersViewOut"
+            android:label="@string/edit_view_out">
+            <intent-filter>
+                <action android:name="android.intent.action.SQLNUMBERSVIEWOUT" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dmcfarland001.glucose.greenglucose.moneyplanner.SQLDeleteDB"
+            android:label="@string/delete_db">
+            <intent-filter>
+                <action android:name="android.intent.action.SQLDELETEDB" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dmcfarland001.glucose.greenglucose.moneyplanner.HourGlass_One"
+            android:label="@string/hourglass">
+            <intent-filter>
+                <action android:name="android.intent.action.HOURGLASS_ONE" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dmcfarland001.glucose.greenglucose.moneyplanner.SQLDeleteEntry"
+            android:label="@string/delete_entry">
+            <intent-filter>
+                <action android:name="android.intent.action.SQLDELETEENTRY" />
+
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

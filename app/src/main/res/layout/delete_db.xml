@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listbg0"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/ab_tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/ask_delete"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/delete_db_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible"
+        android:onClick="OnClick"
+        android:text="@string/delete_in" />
+
+    <!-- switch to IN mini view -->
+
+    <Button
+        android:id="@+id/delete_db_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:onClick="OnClick"
+        android:text="@string/delete_out" />
+
+    <TextView
+        android:id="@+id/ab_tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/delete_last_thirtt"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/delete_last_thirty"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:onClick="OnClick"
+        android:text="@string/delete_thirty" />
+
+</LinearLayout>
